@@ -15,6 +15,18 @@ func main() {
 		os.Exit(1)
 	}
 
+	switch args.Algorithm {
+	case "bubble":
+
+	case "merge":
+
+	case "quick":
+
+	default:
+		fmt.Println("Invalid algorithm")
+		os.Exit(1)
+	}
+
 	fmt.Println(args.Algorithm)
 
 }
