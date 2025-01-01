@@ -8,6 +8,5 @@ func BubbleSort(input []int) []int {
 			}
 		}
 	}
-
 	return input
 }

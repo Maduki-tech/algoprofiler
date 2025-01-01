@@ -3,6 +3,8 @@ package arguments
 import (
 	"flag"
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 type Arguments struct {
@@ -32,6 +34,23 @@ func (a *Arguments) Parse() error {
 	}
 
 	return nil
+}
+
+func (a *Arguments) GetInput() ([]int, error) {
+	if a.Input == "" {
+		return []int{}, nil
+	}
+	returnValue := []int{}
+	splitString := strings.Split(a.Input, ",")
+	for _, value := range splitString {
+		i, err := strconv.Atoi(value)
+		if err != nil {
+			return returnValue, fmt.Errorf("Invalid input")
+		}
+		returnValue = append(returnValue, i)
+	}
+	return returnValue, nil
+
 }
 
 // ParseFlagSet: For testing, allows parsing with a custom FlagSet
