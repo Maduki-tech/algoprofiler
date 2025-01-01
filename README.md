@@ -4,8 +4,17 @@ A Profiler for Algorithms to measure their performance
 
 ## Currently supports:
 
-- Bubble Sort
-- Merge Sort
+- [x] Bubble Sort
+- [x] Merge Sort
+- [ ] Quick Sort
+- [ ] Heap Sort
+- [ ] Insertion Sort
+- [ ] Tim Sort
+- [ ] Selection Sort
+- [ ] Shell Sort
+- [ ] Tree Sort
+- [ ] Comb Sort
+
 
 ## Usage
 
