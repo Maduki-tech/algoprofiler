@@ -44,12 +44,13 @@ func generateRandomInput(i int) []int {
 	return slice
 }
 
-func runAlgorithm(algorithm string, input []int) {
-	switch algorithm {
+func runAlgorithm(name string, input []int) {
+	switch name {
 	case "bubble":
-		runBubblesort(input)
+		run(input, name, algorithms.BubbleSort)
 
 	case "merge":
+		run(input, name, algorithms.Merge_sort)
 
 	case "quick":
 
@@ -59,12 +60,14 @@ func runAlgorithm(algorithm string, input []int) {
 	}
 }
 
-func runBubblesort(input []int) {
-	track := tracker.NewTracker("BubbleSort")
-	timer := tracker.NewTimer("BubbleSort", track)
+type operation func([]int) []int
+
+func run(input []int, name string, op operation) {
+	track := tracker.NewTracker(name)
+	timer := tracker.NewTimer(name, track)
 	timer.StartTimer()
 
-	fmt.Println(algorithms.BubbleSort(input))
+	fmt.Println(op(input))
 
 	timer.EndTimer().Seconds()
 }
