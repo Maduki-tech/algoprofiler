@@ -53,6 +53,11 @@ func runAlgorithm(name string, input []int) {
 		run(input, name, algorithms.Merge_sort)
 
 	case "quick":
+		track := tracker.NewTracker(name)
+		timer := tracker.NewTimer(name, track)
+		timer.StartTimer()
+		algorithms.Quick_sort(input, 0, len(input)-1)
+		timer.EndTimer().Seconds()
 
 	default:
 		fmt.Println("Invalid algorithm")

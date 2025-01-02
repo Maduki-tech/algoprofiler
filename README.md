@@ -6,7 +6,7 @@ A Profiler for Algorithms to measure their performance
 
 - [x] Bubble Sort
 - [x] Merge Sort
-- [ ] Quick Sort
+- [x] Quick Sort
 - [ ] Heap Sort
 - [ ] Insertion Sort
 - [ ] Tim Sort
