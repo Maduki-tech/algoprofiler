@@ -7,8 +7,8 @@ A Profiler for Algorithms to measure their performance
 - [x] Bubble Sort
 - [x] Merge Sort
 - [x] Quick Sort
-- [ ] Heap Sort
-- [ ] Insertion Sort
+- [x] Heap Sort
+- [x] Insertion Sort
 - [ ] Tim Sort
 - [ ] Selection Sort
 - [ ] Shell Sort
