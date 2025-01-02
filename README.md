@@ -8,7 +8,7 @@ A Profiler for Algorithms to measure their performance
 - [x] Merge Sort
 - [x] Quick Sort
 - [x] Heap Sort
-- [] Insertion Sort
+- [x] Insertion Sort
 - [ ] Tim Sort
 - [ ] Selection Sort
 - [ ] Shell Sort
